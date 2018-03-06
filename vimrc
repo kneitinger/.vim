@@ -325,10 +325,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#jedi#python_path = '/home/leaf/.vim/.venv/bin/python'
 " Use tab for suggestion selection
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 "let g:python2_host_prog = '/home/leaf/.pyenv/neovim2/bin/python'
-let g:python3_host_prog = '/home/leaf/.vim/.venv/bin/python'
+"let g:python2_host_prog = '/home/leaf/.vim/.venv/bin/python2'
+let g:python3_host_prog = '/home/leaf/.vim/.venv/bin/python3'
 
 " vim-terraform
 let g:terraform_align=1
